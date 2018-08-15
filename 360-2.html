@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi Paramo</title>
+	<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+</head>
+
+<body>
+
+  <div id='vrview'></div>
+
+<script type="text/javascript">
+window.addEventListener('load', onVrViewLoad);
+
+function onVrViewLoad() {
+  // Selector '#vrview' finds element with id 'vrview'.
+  var vrView = new VRView.Player('#vrview', {
+    image: '//hernan-manrique.com/imagenesProyecto/ejemploimagenpanorama.jpg',
+    is_stereo: false
+});
+
+}
+</script>
+<iframe width="800" height="450" allowfullscreen src="//storage.googleapis.com/vrview/2.0/index.html?image=//hernan-manrique.com/imagenesProyecto/ejemploimagenpanorama.jpg&is_stereo=false" > </iframe>
+
+
+</body>
+</html>

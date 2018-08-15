@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi Paramo</title>
+	<link rel="stylesheet" href="resources/libs/bootstrap-4.1.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/Main.css">
+	<script src="resources/libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="resources/libs/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+	<div class="customMenu customMenuLeft">
+		<nav>
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link active" href="home">Home</a>
+				</li>
+				<li id="videoLink" class="nav-item" onclick="showForm()">
+					<a class="nav-link active" href="#">¿Quieres participar?</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+	<nav class="customMenu customMenuLeft menu360" >
+		<ul class="nav flex-column">
+		  <li class="nav-item">
+		    <a class="nav-link active" href="javascript:show360();">¿Quieres acompañar a XX al nacimiento del río?</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">¿Quieres ver el paso del río por la ciudad?</a>
+		  </li>
+		 
+		</ul>
+	</nav>
+	
+	<!-- 360 Modal -->
+    <div class="modal fade" id="360Modal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-full-screen" role="document">
+          <div class="modal-content modal-content-full-screen">
+             <div class="modal-header">
+             	<h5 class="modal-title">Nacimiento del rio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                <span aria-hidden="true">&times;</span>
+                </button>
+             </div>
+             <div class="modal-body">
+				<iframe class="container360Modal" src="//storage.googleapis.com/vrview/2.0/index.html?image=//hernan-manrique.com/workana/MiParamo/resources/img/360/nacimientoRio.jpg&is_stereo=false" > </iframe>
+             </div>
+          </div>
+       </div>
+    </div>
+	
+
+	<iframe class="background360" allowfullscreen src="//storage.googleapis.com/vrview/2.0/index.html?image=//hernan-manrique.com/workana/MiParamo/resources/img/360/laguna.jpg&is_stereo=false" > </iframe>
+
+	<script type="text/javascript">
+
+	function showForm(){
+      	$('#formModal').modal('show');
+      }
+	
+	function show360(){
+		$('#360Modal').modal('show');
+	}
+	
+	</script>
+</body>
+</html>

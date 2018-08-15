@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi Paramo</title>
+	<link rel="stylesheet" href="resources/libs/bootstrap-4.1.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+	<script src="resources/libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="resources/libs/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<img src="resources/img/background.jpg" class="bg" alt="">
+	<div class="bgMenu rightMenu">
+		<nav>
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link" href="javascript:showForm();">¿Quiéres participar?</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="home">Home</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="menu-inferior-iz">
+		<object data="resources/img/menu-inferior-iz.svg" type="image/svg+xml" id="menu-inferior-iz"></object>
+	</div>
+	<div class="menu-inferior-recorrido">
+		<nav>
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link active" href="javascript:show360Modal('Paso de río por Cúcuta', 'nacimientoRio.jpg')">¿Quieres ver el paso de río por Cúcuta?</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="javascript:show360Modal('Nacimiento del Río', 'nacimientoRio.jpg')">¿Quieres acompañar a XX al nacimiento del río?</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="javascript:show360Modal('Paso de río por Bucaramanga', 'ejemplo.jpg')">¿Quieres ver el paso de río por Bucaramanga?</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<!-- video Modal -->
+	<div class="modal fade" id="mainVideoModal" tabindex="-1" role="dialog" aria-labelledby="mainVideoModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Video explicativo</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="stopMainVideo()">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<iframe class="mainVideoIframe" src="https://www.youtube.com/embed/_piT7I5P2q8"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- infografia Modal -->
+	<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="infoModalTitle">Infográfico</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img class="infografia" alt="infografia" src="resources/img/infografia.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Gallery -->
+	<div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="galleryModalTitle">Galeria</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<!--Carousel Wrapper-->
+					<div id="carousel-gallery-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-gallery-2" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-gallery-2" data-slide-to="1"></li>
+							<li data-target="#carousel-gallery-2" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active">
+								<div class="view">
+									<img class="d-block w-100" src="resources/img/gallery1.png" alt="First slide">
+									<div class="mask rgba-black-light"></div>
+								</div>
+								<div class="carousel-caption">
+									<h3 class="h3-responsive">Titulo 1</h3>
+									<p>Texto correspondiente a la imagen 1</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="view">
+									<img class="d-block w-100" src="resources/img/gallery2.png" alt="Second slide">
+									<div class="mask rgba-black-light"></div>
+								</div>
+								<div class="carousel-caption">
+									<h3 class="h3-responsive">Titulo 2</h3>
+									<p>Texto correspondiente a la imagen 2</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="view">
+									<img class="d-block w-100" src="resources/img/gallery3.png" alt="Third slide">
+									<div class="mask rgba-black-light"></div>
+								</div>
+								<div class="carousel-caption">
+									<h3 class="h3-responsive">Titulo 3</h3>
+									<p>Texto correspondiente a la imagen 3</p>
+								</div>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carousel-gallery-2" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Anterior</span>
+						</a>
+						<a class="carousel-control-next" href="#carousel-gallery-2" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Siguiente</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 360 Modal -->
+	<div class="modal fade" id="360Modal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-full-screen" role="document">
+			<div class="modal-content modal-content-full-screen">
+				<div class="modal-header">
+					<h5 id="title360Modal" class="modal-title"></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<iframe id="360ModalIframe" class="container360Modal" src="" > </iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function stopMainVideo(){
+			$("#mainVideoModal").on('hidden.bs.modal', function (e) {
+				$("#mainVideoModal iframe").attr("src", $("#mainVideoModal iframe").attr("src"));
+			});
+		}
+
+		function showGaleria(){
+			$('#galleryModal').modal('show');
+		}
+
+		function showInfografia(){
+			$('#infoModal').modal('show');
+		}
+		
+		function show360Modal(titleModal, imageURL){
+			
+			thisImage = "//storage.googleapis.com/vrview/2.0/index.html?image=//hernan-manrique.com/workana/MiParamo/resources/img/360/" + imageURL + "&is_stereo=false";
+			$('#360Modal').modal('show');
+			$('#title360Modal').html(titleModal);
+			$('#360ModalIframe').attr("src", thisImage);
+			
+		}
+		
+	</script>
+</body>
+</html>

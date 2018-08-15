@@ -1,0 +1,289 @@
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+.indexContainer {
+	width: 100%;
+	height: 100%;
+	position:absolute;
+}
+
+.iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	
+}
+
+.indexButton {
+	position: fixed !important;
+	bottom: 35px;
+	right: 0;
+}
+
+.bgMenu {
+	width: max-content;
+	background-color: #1A237E;
+	margin: 10px 0;
+	position: relative;
+	z-index: 2;
+}
+
+.bgMenu a {
+	color: #ffffff;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+.rightMenu {
+	border-radius: 10px 0 0 10px;
+	float: right;
+}
+
+.rightMenu a:hover {
+	background-color: #283593;
+	border-radius: 10px 0 0 10px;
+}
+
+.leftMenu {
+	border-radius: 0 10px 10px 0;
+	float: left;
+}
+
+.leftMenu a:hover {
+	background-color: #283593;
+	border-radius: 0 10px 10px 0;
+}
+
+.bg {
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.opacity {
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.logo-personajes {
+	position: relative;
+	width: 60%;
+	min-width: 340px;
+	margin: auto;
+	padding-top: 70px;
+}
+
+.personajes img, .logo-personajes object, .infografia, .menu-inferior-iz object, .mapa, .logo-text img {
+	width: 100%;
+}
+
+.menu-inferior-iz {
+	position: fixed;
+	bottom: 20px;
+	left: 30px;
+	width: 200px;
+	
+}
+
+.menu-inferior-recorrido {
+	width: max-content;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 2;
+}
+
+.menu-inferior-recorrido li{
+	background-color: #ffffff;
+	margin: 0 15px;
+	border-radius: 10px;
+}
+
+.menu-inferior-recorrido a {
+	color: #000000;
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+.logo-text {
+	position: relative;
+	width: 30%;
+	min-width: 280px;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.buttonsContainer {
+	width: 70%;
+	margin: 20px auto;
+	z-index: 3;
+	position: relative;
+}
+
+.buttonLeft {
+	float: left;
+	background-color: #ebb51b;
+	width: 40%;
+	height: 150px;
+	text-align: center;
+	font-size: 45px;
+	color: #000000;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.buttonLeft:hover {
+	background-color: #fbc733;
+	cursor: pointer;
+	text-decoration: none;
+	color: #000000;
+}
+
+.buttonRight {
+	float: right;
+	background-color: #254071;
+	width: 50%;
+	height: 150px;
+	text-align: center;
+	font-size: 45px;
+	color: #ffffff;
+	padding: 10px;
+}
+
+.buttonRight:hover {
+	background-color: #283593;
+	cursor: pointer;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.personajes {
+	width: 50%;
+	margin: auto;
+	z-index: 2;
+	position: relative;
+}
+
+.participarImg {
+	
+	height: 100%;
+}
+/* social */
+.social {
+	position: fixed;
+	left: 0;
+	top: 70px;
+	z-index: 2000;
+
+}
+ 
+.social ul {
+	list-style: none;
+}
+ 
+.social ul li a {
+	display: inline-block;
+	color:#fff;
+	background: #000;
+	padding: 5px 10px;
+	text-decoration: none;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+ 
+.social ul li .icon-facebook {background:#3b5998;}
+.social ul li .icon-twitter {background: #33ccff;}
+.social ul li .icon-googleplus {background: #fc4d3f;}
+.social ul li .icon-instagram {background: #ae181f;}
+.social ul li .icon-youtube {background: #ff0000;}
+	
+.iconImg {
+    width: 45px;
+}
+
+.social ul li a:hover {
+	background: #000;
+	padding: 5px 20px;
+}
+
+/* bootstrap */
+.card-body {
+	-ms-flex: 1 1 auto;
+	padding: 0.25rem;
+}
+
+.modal-dialog-full-screen {
+  width: 95%;
+  height: 100%;
+  min-width: 95%;
+  margin: auto;
+  padding: 0;
+}
+
+.modal-content-full-screen{
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+
+.container360Modal {
+	width: 100%;
+	height:500px;
+	border: 0;
+	
+}
+
+
+
+
+
+
+.mainVideoIframe{
+	width: 100%;
+	height: 300px;
+	border: 0;
+	
+}
+
+.background360 {
+	position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+
+  min-width: 100%;
+  min-height: 100%;
+
+	border: 0;
+}
+
+
+.menu360 {
+	z-index: 2;
+	position: fixed;
+	bottom: 50px;
+}
+
+.nav-inf-iz {
+	position: fixed;
+	bottom: 15px;
+	width: 20%;
+	
+}
+
+.nav-inf-de {
+	position: fixed;
+	bottom: 15px;
+	width: 20%;
+	right: 0;
+	
+}
+
+
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi Paramo</title>
+	<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+</head>
+
+<body>
+
+<div id='vrview'></div>
+
+<script type="text/javascript">
+window.addEventListener('load', onVrViewLoad);
+
+function onVrViewLoad() {
+  // Selector '#vrview' finds element with id 'vrview'.
+  var vrView = new VRView.Player('#vrview', {
+    image: 'capa-0-copia1_sphere.jpg'
+  });
+}
+</script>
+
+
+</body>
+</html>
